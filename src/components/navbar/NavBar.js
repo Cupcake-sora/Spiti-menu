@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdOutlineCoffeeMaker } from 'react-icons/md';
+import CartWidget from './navcomponents/CartWidget';
 
 function NavBar() {
     return (
@@ -24,9 +25,9 @@ function NavBar() {
                             <a className="nav-link" href="#">Bebidas</a>
                         </li>
                     </ul>
-                    <form className="d-flex">
-                        <button className="btn btn-outline-success" type="submit">Carrito</button>
-                    </form>
+                    <div className="d-flex">
+                        <CartWidget/>
+                    </div>
                 </div>
             </div>
         </nav>
